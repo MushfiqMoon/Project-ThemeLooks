@@ -1,0 +1,852 @@
+/*------------------------------------------------------------------- /
+
+Theme Name: HUGE
+Author: "Mushfiq"
+Author URI: 
+Description: 
+Version: 1.0
+
+--------------------------------------------------------------------- */
+
+/*---------------------------------------------
+
+=========== Table Of Content ===========
+
+        1.General css
+        2.Common Css
+        3.Header Css
+        4.Menu Css
+        5.Banner Css
+        6.Hosting Css
+        7.Domain Css
+        8.Feature Css
+        9.Pricing Css
+        10.Counter Css
+        11.Offer Css
+        12.Choose Css
+        13.Clint Css
+        14.Contact Css
+        15.Footer Css
+	
+-----------------------------------------------*/
+
+/*====================================================================
+				1.General css
+======================================================================*/
+*{
+	margin:0;
+	padding:0;
+}
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    max-width:1920px;
+    margin:0 auto;
+	position:relative;
+}
+a:focus,
+a:hover,
+a:active,
+a{
+	text-decoration:none;
+	outline:none;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Lora', serif;
+	font-weight : normal;
+	margin: 0;
+}
+p{margin: 0;line-height: 28px;}
+
+input,select,textarea,button{
+	outline :0;   	
+}
+
+html,body{
+    height: 100%;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+textarea{
+    resize: none;
+}
+
+/*====================================================================
+				2.Common Css
+======================================================================*/
+.section-padding {
+    padding: 100px 0;
+}
+.orm-header-area h5 {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	margin-bottom: 18px;
+	color: #999;
+}
+.orm-header-area h2 {
+    font-size: 36px;
+    font-weight: 600;
+	color: #000;
+}
+.bg-2{
+	background: #f9f9f9;
+}
+.orm-head-contact a:hover i,
+.nav-item.user:hover i,
+.nav-item a:hover,
+.single-box-content,
+.btn-orm:hover,
+.orm-foot-links li:hover i,
+.orm-foot-links li:hover a,
+.omr-host-single .card-body:hover,
+.omr-host-single:hover .omr-spc-icon,
+.omr-host-single:hover i,
+.orm-head-contact a:hover i,
+.orm-social a:hover{
+	-webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;	
+}
+.btn-orm{
+	font-size: 18px;
+	font-family: 'Lora', serif;
+	background: #119ee6;
+	color:#fff;
+	font-weight: 600;
+}
+.btn-orm:hover{
+	background: #000;
+}
+/*====================================================================
+				3.Header Css
+======================================================================*/
+.orm-header {
+    background: #151414;
+    padding: 15px 0;
+}
+.orm-social h4{
+	color: #aaa;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+.orm-social a{
+	padding: 0 3PX;
+	color: #aaa;
+	font-size: 14px;
+}
+.orm-social a:hover{
+	color: #119ee6;
+}
+.orm-head-contact li {
+    border-right: 1px solid #aaa;
+}
+.orm-head-contact li:last-child{
+	border-right: none;
+}
+.orm-head-contact a {
+	font-size: 14px;
+	color: #aaa;
+	margin-right: 20px;
+}
+.orm-head-contact li:last-child a{
+	margin-right: 0;
+	margin-left: 10px;
+}
+.orm-head-contact i {
+    margin-right: 5px;
+}
+.orm-head-contact a:hover i{
+	color: #119ee6;
+}
+/*====================================================================
+				4.Menu Css
+======================================================================*/
+.omr-menu.navbar{
+    padding: 0;
+}
+.omr-menu .nav-item a {
+    padding: 23px 0 25px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #222;
+    border-top: 2px solid #f9f9f9;
+}
+.omr-menu .nav-item a:hover{
+    color: #119ee6;
+    border-color:#119ee6; 
+} 
+.omr-menu.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.omr-menu {
+	background: #f9f9f9;
+
+}
+.nav-item.user {
+    margin-left: 55px;
+    margin-right: 45px;
+    position: relative;
+}
+.nav-item.user:before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 1px;
+    background: #dcdcdc;
+    right: 0;
+    top: 10px;
+}
+.nav-item.user:hover i {
+	background:#000;
+}
+.nav-item.user:hover .omr-spc-icon{
+	border-color: #119ee6;
+}
+.nav-item.user .omr-spc-icon{
+    bottom: -35px;
+    right: -32px;
+}
+
+.omr-menu .cart {
+    font-size: 20px;
+    margin-left: 60px;
+    color: #222;
+}
+/*====================================================================
+				5.Banner Css
+======================================================================*/
+.omr-banner{
+    background: #f2f2f2;
+}
+.omr-banner-area{
+    padding: 130px 0;
+}
+.omr-banner-txt {
+    margin-top: 30px;
+}
+.omr-banner-txt h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+}
+.omr-banner-txt p {
+    color: #555;
+    font-size: 16px;
+    padding: 25px 0 30px;
+}
+.anim{
+    animation-name: animit;
+    animation-duration: 2s;
+    transition-timing-function: ease;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+@keyframes animit{
+    0%{
+		left: 0px;
+	}
+    50%{
+        left: 10px;
+    }
+	100%{
+		left: 0px;
+	}
+}
+/*====================================================================
+				6.Hosting Css
+======================================================================*/
+.omr-spc-icon {
+    display: inline-block;
+    height: 63px;
+    width: 63px;
+    line-height: 63px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #000;
+	margin-top: 0;
+	position: absolute;
+}	
+.omr-host-single .omr-spc-icon{
+	top: -31px;
+}
+.omr-spc-icon i {
+    font-size: 24px;
+	background: #119ee6;
+	color: #fff;
+    padding: 9px;
+    height: 46px;
+    width: 45px;
+    border-radius: 50%;
+}
+.omr-host-single:hover i {
+	background:#000;
+}
+.omr-host-single:hover .omr-spc-icon{
+	border-color: #119ee6;
+}
+.omr-host-single{
+	border: none;
+}
+.omr-host-single .card-body {
+    background: #119ee6;
+	color: #fff;
+}
+
+.omr-host-single .card-body:hover {
+    background: #fff;
+	color: #000;
+}
+.omr-host-single h5 {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.omr-host-single p {
+	margin: 15px 0;
+}
+/*====================================================================
+				7.Domain Css
+======================================================================*/
+.omr-domain{
+	position: relative;
+	background: url(../../images/home/dom.jpg) no-repeat center;
+}
+.omr-overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.95);
+}
+.omr-dom-area .orm-header-area h5,
+.omr-dom-area .orm-header-area h2,
+.omr-dom-area {
+    color: #fff;
+}
+.omr-dom-search .input-group {
+    border: 10px solid #119ee6;
+    margin: 50px 0;
+}
+.omr-dom-search .form-control{
+	border: none;
+	border-radius: 0;
+}
+.omr-dom-search .input-group button {
+    color: #fff;
+    padding: 0 30px;
+    font-weight: 300;
+}
+/*====================================================================
+				8.Feature Css
+======================================================================*/
+.omr-feature-singel{
+	border: none;
+	border-radius: 0;
+	padding-top: 50px;
+}
+.omr-feature-singel .card-body{
+	padding: 0;
+}
+.omr-fet-singel-icon {
+    color: #119ee6;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    border-bottom: 1px solid #119ee6;
+}
+.omr-feature-singel h5 {
+    font-size: 18px;
+    font-weight: 600;
+	margin: 40px 0 20px;
+	color:#222;
+}
+.omr-feature-singel h5 {
+    font-weight: 600;
+	color:#444;
+}
+/*====================================================================
+				9.Pricing Css
+======================================================================*/
+.omr-pric-single {
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.175);
+    margin-top: 90px;
+    overflow: hidden;
+}
+.omr-pricing .card-header{
+	padding: 20px 0 35px;
+    border: none;
+    background: #000;
+	color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.omr-pricing .card-header.active:before {
+    content: "Recommended";
+    position: absolute;
+    top: 15%;
+    left: -38%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: #119ee6;
+    font-weight: 600;
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Lora', serif;
+}
+.omr-pricing .card-header.active .omr-spc-icon2,
+.omr-pricing .card-header.active{
+	background: #119ee6
+}
+.omr-spc-icon2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    height: 90px;
+    width: 100px;
+    line-height: 90px;
+    border-radius: 50%;
+    z-index: -1;
+    font-size: 30px;
+    bottom: -40px;
+}
+.omr-pric-single ul {
+    margin-bottom: 15px;
+}
+.omr-pric-single h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.omr-pric-single h5 {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+.omr-pric-single h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.omr-pric-single h2 span {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: -10px;
+}
+.omr-pric-single li{
+    border: none;
+    font-size: 16px;
+	color: #999;
+	padding: 7px 10px;
+}
+.omr-pric-single li i.active{
+    color: #119ee6;
+    margin-right: 5px;
+}
+.omr-pric-single .card-body{
+	padding: 65px 0 30px;
+}
+/*====================================================================
+				10.Counter Css
+======================================================================*/
+.orm-counter{
+	position: relative;
+	background: url(../../images/home/dom.jpg) no-repeat center fixed;
+}
+.orm-count-area {
+	padding: 120px 0 85px;
+    color: #fff;
+}
+
+.orm-count-single h4 {
+    font-size: 24px;
+}
+.orm-count-single .counter{
+	font-size: 48px;
+}
+.orm-count-single h4:before {
+    
+    font-family: FontAwesome;
+    position: absolute;
+    top: -20px;
+    color: rgba(255, 255, 255, .15);
+    font-size: 70px;
+}
+.orm-count-single.reg h4:before {
+	content: "\f1fa";
+}
+.orm-count-single.hc h4:before {
+	content: "\f118";
+}
+.orm-count-single.pd h4:before {
+	content: "\f15b";
+}
+.orm-count-single.aw h4:before {
+	content: "\f091";
+}
+.orm-count-single.pd:after,
+.orm-count-single.hc:after,
+.orm-count-single.reg:after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 2px;
+    background: #062230;
+    right:30px;
+    top: 0;
+    transform: rotate(10deg);
+}
+/*====================================================================
+				11.Offer Css
+======================================================================*/
+.orm-offer-cat {
+    padding: 70px 0 95px;
+}
+.orm-offer-cat li {
+    border: 1px solid #eee;
+    border-right: 0;
+    position: relative;
+}
+.orm-offer-cat li:last-child {
+    border-right: 1px solid #eee;
+}
+.orm-offer-cat li a{
+	background: #fff;
+	padding: 20px 45px;
+	color: #999999;
+	font-size: 30px;
+}
+.orm-offer-content {
+    background: #fff;
+    padding: 55px 0 75px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.175);
+}
+.single-box-content:hover {
+    background: #000;
+}
+.orm-offer-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #000;
+}
+.orm-offer-content p {
+	color: #555;
+}
+.orm-offer-content blockquote {
+    border-left: 2px solid #eee;
+    color: #999;
+    padding-left: 15px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 20px 0;
+}
+.orm-offer-content a {
+    font-size: 16px;
+    color: #119ee6;
+    font-family: 'Lora', serif;
+    margin-top: 20px;
+    display: inline-block;
+}
+.orm-offer-content i {
+margin-left: 5px
+}
+.orm-offer .nav-link.active,
+.orm-offer .nav-link:focus,
+.orm-offer  .nav-link:hover {
+    border-bottom: 2px solid #119ee6;
+}
+.orm-offer .nav-link.active:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #119ee6;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.orm-offer .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:#119ee6;
+    color: #fff;
+    text-align: center;
+	padding: 5px 0;  
+	font-size: 14px; 
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.orm-offer .nav-link:hover .tooltiptext {
+    visibility: visible;
+}
+/*====================================================================
+				12.Choose Css
+======================================================================*/
+.box-content .col-md-4,.box-content .col-md-8{padding-right: 5px;padding-left: 5px;}
+.box-content .col-md-6{padding-right: 5px;padding-left: 5px;}
+.single-box-content {
+    height:292px;
+    background: #119ee6;
+    margin-bottom: 10px;
+}
+.single-box-content.xtra-height{
+  height: 592px;
+  margin-right: 10px
+} 
+
+.orm-choose-us .box-content {
+    margin-top: 90px;
+}
+.omr-choose-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px;
+    color: #fff;
+}
+.omr-choose-content i {
+    font-size: 30px;
+}
+.omr-choose-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 25px 0 20px;
+}
+.omr-choose-content.ral {
+    text-align: right;
+}
+.omr-choose-content.la.hidn:before {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-size: 78px;
+    color: rgba(255, 255, 255, .2);
+    font-family: 'Lora', serif;
+}
+.omr-choose-content.ral.hidn:before {
+    position: absolute;
+    left: 30px!important;
+    top: 0;
+    font-size: 78px;
+    color: rgba(255, 255, 255, .2);
+    font-family: 'Lora', serif;
+}
+.omr-choose-content.hidn.first:before {
+    content: "01";
+}
+.omr-choose-content.hidn.secnd:before {
+    content: "02";
+}
+.omr-choose-content.hidn.thrd:before {
+    content: "03";
+}
+.omr-choose-content.hidn.frth:before {
+    content: "04";
+}
+.omr-choose-content.hidn.fifth:before {
+    content: "05";
+}
+.single-box-content.xtra-small {width: 360px;}
+.single-box-content.xtra-medium{width: 420px;}
+.single-box-content.xtra-medium.ml {position: relative;left: -20px;}
+.single-box-content.xtra-small.mr {position: relative;right: -40px;}
+/*====================================================================
+				13.Clint Css
+======================================================================*/
+.orm-clint.section-padding {
+    padding-bottom: 80px;
+}
+.orm-clint .owl-carousel .owl-item img {
+    width: initial;
+}
+.orm-clint-single {
+    padding: 75px 10px 0;
+}
+.orm-clint-single h4 {
+    position: relative;
+    color: #222;
+    font-weight: 600;
+}
+.orm-clint-single h4:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    top: -10px;
+    color: #ddd;
+	font-size: 30px;
+	z-index: -1;
+}
+.orm-clint-single a {
+    color: #ddd;
+    font-size: 17px;
+    margin-right: 7px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.item.orm-clint-single blockquote {
+    border-left: 1px solid #119ee6;
+    padding-left: 15px;
+    color: #555;
+	margin: 25px 0 30px;
+}
+.item.orm-clint-single .media-body h5 {
+    font-size: 16px;
+    color: #222;
+}
+.item.orm-clint-single .media-body p {
+    font-weight: 300;
+    color: #555;
+}
+.orm-clint .owl-theme .owl-nav [class*=owl-] {
+	background: transparent;
+	color: #000;	
+	font-size: 20px;
+}
+.orm-clint .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #119ee6;
+}
+.orm-clint .owl-theme .owl-nav {
+    margin-top: 20px;
+}
+/*====================================================================
+				14.Contact Css
+======================================================================*/
+.orm-cont-area {
+    background: #119ee6;
+    color: #fff;
+    padding: 45px 0 40px;
+}
+.orm-cont-area i {
+    font-size: 35px;
+}
+.orm-cont-area h5 {
+    margin: 10px 0 5px;
+}
+.orm-cont-area p {
+    font-weight: 300;
+}
+/*====================================================================
+				15.Footer Css
+======================================================================*/
+.orm-footer {
+    background: #151414;
+    padding-top: 80px;
+    color: #999999;
+}
+.orm-foot-single h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 33px;
+    margin-top: 7px;
+}
+.orm-foot-single span img{
+	margin-bottom: 37px;
+}
+.orm-foot-single p {
+    font-weight: 300;
+    line-height: 24px;
+}
+.orm-foot-about a {
+    color: #cccccc;
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Lora', serif;
+}
+.orm-foot-links a {
+    color: #999;
+    letter-spacing: -0.1px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.orm-foot-links i {
+    color: #fff;
+    margin-right: 5px;
+}
+.orm-foot-links li:hover i,
+.orm-foot-links li:hover a{
+	color: #119ee6;
+}
+.orm-newsletter .input-group {
+    border: 3px solid #fff;
+    margin-top: 20px;
+}
+.orm-newsletter button,
+.orm-newsletter input {
+    border-radius: 0;
+    border: none;
+}
+.orm-newsletter input {
+	font-size: 14px;
+	font-weight: 300;
+}
+.orm-newsletter button {
+    color: #fff;
+    background: #119ee6;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+.orm-payment h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+.orm-payment a {
+    color: #fff;
+    font-size: 34px;
+}
+.footer-copyright {
+    border-top: 1px solid;
+    padding: 30px 0;
+    font-size: 16px;
+    margin-top: 65px;
+}
+.footer-copyright span{
+	color: #119ee6
+}
